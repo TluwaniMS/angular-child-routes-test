@@ -15,11 +15,11 @@
   </button>
 </mat-toolbar>
 
-<div *ngIf="SpinnerIsActive">
+<div class="spinner-center" *ngIf="SpinnerIsActive">
   <mat-spinner></mat-spinner>
 </div>
 
-<div *ngIf="!SpinnerIsActive">
+<div class="main-content-container" *ngIf="!SpinnerIsActive">
   <div>
     {{ PageTitle }}
   </div>

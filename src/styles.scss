@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.main-content-container {
+  text-align: center;
+  margin: 16px;
+}
+
+.spinner-center {
+  text-align: -webkit-center;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}

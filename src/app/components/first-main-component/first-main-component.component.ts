@@ -18,11 +18,13 @@ export class FirstMainComponentComponent implements OnInit {
   ngOnInit(): void {}
 
   updateChildViewData() {
+    this.updateSpinnerStatus();
     setTimeout(() => {
       this.routerCommunicationSupport.data$.subscribe((data: any) => {
         this.PageTitle = data.title;
         this.PageDescription = data.description;
       });
+      this.updateSpinnerStatus();
     }, 2000);
   }
 

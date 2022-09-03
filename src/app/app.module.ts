@@ -17,6 +17,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ChildAndParentRouterCommunicationService } from '../app/services/child-and-parent-router-communication.service';
 import { MainLandingPageComponent } from './components/main-landing-page/main-landing-page.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatButtonModule,
     MatIconModule,
     MatProgressSpinnerModule,
+    MatCardModule,
   ],
   providers: [ChildAndParentRouterCommunicationService],
   bootstrap: [AppComponent],

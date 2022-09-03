@@ -13,6 +13,10 @@ export class FirstMainComponentSecondChildNestComponent implements OnInit {
       'This data is being read from the second nested route component, to the main parent component.',
   };
 
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
+
   constructor(
     private routerCommunicationSupport: ChildAndParentRouterCommunicationService
   ) {}
