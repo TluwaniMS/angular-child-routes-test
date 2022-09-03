@@ -1,5 +1,13 @@
 # AngularChildRoutesTes
 
+
+# About Repository:
+This is a basic angular project that I created to learn the basics of angular nested routes, and try figure out a way on how to share data from a route-outlet to the parent.
+
+# Software(s) required:
+* Latest stable version of Node Package Manager
+* Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
 ## Development server
