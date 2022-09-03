@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainLandingPageComponent } from '../../src/app/components/main-landing-page/main-landing-page.component';
 import { FirstMainComponentComponent } from '../../src/app/components/first-main-component/first-main-component.component';
 import { SecondMainComponentComponent } from '../../src/app/components/second-main-component/second-main-component.component';
 import { FirstMainComponentFirstChildNestComponent } from './components/first-main-component-first-child-nest/first-main-component-first-child-nest.component';
@@ -8,6 +9,7 @@ import { SecondMainComponentFirstChildNestComponent } from './components/second-
 import { SecondMainComponentSecondChildNestComponent } from './components/second-main-component-second-child-nest/second-main-component-second-child-nest.component';
 
 const routes: Routes = [
+  { path: 'main-landing-page', component: MainLandingPageComponent },
   {
     path: 'first-main-component',
     component: FirstMainComponentComponent,
@@ -38,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/first-main-component/first-nested-first',
+    redirectTo: '/main-landing-page',
     pathMatch: 'full',
   },
 ];
