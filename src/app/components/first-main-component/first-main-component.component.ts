@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ChildAndParentRouterCommunicationService } from '../../services/child-and-parent-router-communication.service';
 
 @Component({
   selector: 'app-first-main-component',
@@ -7,11 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./first-main-component.component.scss'],
 })
 export class FirstMainComponentComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor(
+    private routerCommunicationSupport: ChildAndParentRouterCommunicationService
+  ) {}
 
-  ngOnInit(): void {}
-
-  checkNestedView() {
-    console.log(this.router.url);
+  ngOnInit(): void {
+    this.routerCommunicationSupport.data$.subscribe((data:any) =>
+      console.log(data.title)
+    );
   }
 }
