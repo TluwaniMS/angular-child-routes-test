@@ -15,11 +15,17 @@
   </button>
 </mat-toolbar>
 
-<div>
-  {{ PageTitle }}
-</div>
-<div>
-  {{ PageDescription }}
+<div *ngIf="SpinnerIsActive">
+  <mat-spinner></mat-spinner>
 </div>
 
-<router-outlet></router-outlet>
+<div *ngIf="!SpinnerIsActive">
+  <div>
+    {{ PageTitle }}
+  </div>
+  <div>
+    {{ PageDescription }}
+  </div>
+</div>
+
+<router-outlet (activate)="updateChildViewData()"></router-outlet>

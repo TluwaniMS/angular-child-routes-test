@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class ChildAndParentRouterCommunicationService {
-  private data = new BehaviorSubject({ content: '', supporting: [] });
+  private data = new BehaviorSubject({ title: '', description: '' });
   data$ = this.data.asObservable();
 
   constructor() {}

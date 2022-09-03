@@ -9,6 +9,8 @@ import { ChildAndParentRouterCommunicationService } from '../../services/child-a
 export class FirstMainComponentFirstChildNestComponent implements OnInit {
   supportingData = {
     title: 'First Nest',
+    description:
+      'This data is being read from the first nested route component, to the main parent component.',
   };
 
   constructor(

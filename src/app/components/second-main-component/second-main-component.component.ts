@@ -9,15 +9,28 @@ import { ChildAndParentRouterCommunicationService } from '../../services/child-a
 export class SecondMainComponentComponent implements OnInit {
   PageTitle: any;
   PageDescription: any;
+  SpinnerIsActive = false;
 
   constructor(
     private routerCommunicationSupport: ChildAndParentRouterCommunicationService
   ) {}
 
-  ngOnInit(): void {
-    this.routerCommunicationSupport.data$.subscribe((data: any) => {
-      this.PageTitle = data.title;
-      this.PageDescription = data.description;
-    });
+  ngOnInit(): void {}
+
+  updateChildViewData() {
+    this.updateSpinnerStatus();
+    setTimeout(() => {
+      this.routerCommunicationSupport.data$.subscribe((data: any) => {
+        this.PageTitle = data.title;
+        this.PageDescription = data.description;
+      });
+      this.updateSpinnerStatus();
+    }, 2000);
+  }
+
+  updateSpinnerStatus() {
+    this.SpinnerIsActive
+      ? (this.SpinnerIsActive = false)
+      : (this.SpinnerIsActive = true);
   }
 }
