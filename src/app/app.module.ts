@@ -9,7 +9,9 @@ import { FirstMainComponentFirstChildNestComponent } from './components/first-ma
 import { FirstMainComponentSecondChildNestComponent } from './components/first-main-component-second-child-nest/first-main-component-second-child-nest.component';
 import { SecondMainComponentFirstChildNestComponent } from './components/second-main-component-first-child-nest/second-main-component-first-child-nest.component';
 import { SecondMainComponentSecondChildNestComponent } from './components/second-main-component-second-child-nest/second-main-component-second-child-nest.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SecondMainComponentFirstChildNestComponent,
     SecondMainComponentSecondChildNestComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
