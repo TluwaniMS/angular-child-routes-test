@@ -20,6 +20,7 @@ const routes: Routes = [
         path: 'first-nested-second',
         component: FirstMainComponentSecondChildNestComponent,
       },
+      { path: '', redirectTo: '/first-nested-first', pathMatch: 'full' },
     ],
   },
   {
@@ -36,6 +37,7 @@ const routes: Routes = [
       },
     ],
   },
+  { path: '', redirectTo: '/first-main-component', pathMatch: 'full' },
 ];
 
 @NgModule({
