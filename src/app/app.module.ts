@@ -13,6 +13,8 @@ import { SecondMainComponentSecondChildNestComponent } from './components/second
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { ChildAndParentRouterCommunicationService } from '../app/services/child-and-parent-router-communication.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatToolbarModule,
   ],
-  providers: [],
+  providers: [ChildAndParentRouterCommunicationService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
