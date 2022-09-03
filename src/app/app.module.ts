@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { ChildAndParentRouterCommunicationService } from '../app/services/child-and-parent-router-communication.service';
+import { MainLandingPageComponent } from './components/main-landing-page/main-landing-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ChildAndParentRouterCommunicationService } from '../app/services/child-
     FirstMainComponentSecondChildNestComponent,
     SecondMainComponentFirstChildNestComponent,
     SecondMainComponentSecondChildNestComponent,
+    MainLandingPageComponent,
   ],
   imports: [
     BrowserModule,
