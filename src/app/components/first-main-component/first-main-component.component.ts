@@ -7,8 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./first-main-component.component.scss'],
 })
 export class FirstMainComponentComponent implements OnInit {
-  FirstCild = false;
-  SecondChild = false;
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
