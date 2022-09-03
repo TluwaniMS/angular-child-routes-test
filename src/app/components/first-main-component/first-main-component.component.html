@@ -1,7 +1,7 @@
 <mat-toolbar>
-  <span>First Main Component</span>
+  <button [routerLink]="['/']" mat-flat-button color="accent"><mat-icon>home</mat-icon></button>
   <span class="example-spacer"></span>
-  <span [routerLink]="['first-nested-first']" routerLinkActive="router-link-active" >First Child</span>
-  <span [routerLink]="['first-nested-second']" routerLinkActive="router-link-active">Second Child</span>
+  <button [routerLink]="['first-nested-first']" mat-flat-button color="accent">First View</button>
+  <button [routerLink]="['first-nested-second']" mat-flat-button color="primary">Second View</button>
 </mat-toolbar>
 <router-outlet></router-outlet>
