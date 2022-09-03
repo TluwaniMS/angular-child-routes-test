@@ -12,7 +12,7 @@ import { SecondMainComponentSecondChildNestComponent } from './components/second
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatButtonModule } from '@angular/material/button';
 import { ChildAndParentRouterCommunicationService } from '../app/services/child-and-parent-router-communication.service';
 import { MainLandingPageComponent } from './components/main-landing-page/main-landing-page.component';
 
@@ -32,6 +32,7 @@ import { MainLandingPageComponent } from './components/main-landing-page/main-la
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [ChildAndParentRouterCommunicationService],
   bootstrap: [AppComponent],
