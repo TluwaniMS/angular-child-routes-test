@@ -9,6 +9,7 @@ import { FirstMainComponentFirstChildNestComponent } from './components/first-ma
 import { FirstMainComponentSecondChildNestComponent } from './components/first-main-component-second-child-nest/first-main-component-second-child-nest.component';
 import { SecondMainComponentFirstChildNestComponent } from './components/second-main-component-first-child-nest/second-main-component-first-child-nest.component';
 import { SecondMainComponentSecondChildNestComponent } from './components/second-main-component-second-child-nest/second-main-component-second-child-nest.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SecondMainComponentSecondChildNestComponent } from './components/second
     SecondMainComponentFirstChildNestComponent,
     SecondMainComponentSecondChildNestComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
