@@ -1,7 +1,24 @@
 <mat-toolbar>
-  <button [routerLink]="['/']" mat-flat-button color="accent"><mat-icon>home</mat-icon></button>
+  <button [routerLink]="['/']" mat-flat-button color="accent">
+    <mat-icon>home</mat-icon>
+  </button>
   <span class="example-spacer"></span>
-  <button [routerLink]="['first-nested-first']" mat-flat-button color="accent">First View</button>
-  <button [routerLink]="['first-nested-second']" mat-flat-button color="primary">Second View</button>
+  <button [routerLink]="['first-nested-first']" mat-flat-button color="accent">
+    First View
+  </button>
+  <button
+    [routerLink]="['first-nested-second']"
+    mat-flat-button
+    color="primary"
+  >
+    Second View
+  </button>
 </mat-toolbar>
+
+<div>
+  {{ PageTitle }}
+</div>
+<div>
+  {{ PageDescription }}
+</div>
 <router-outlet></router-outlet>

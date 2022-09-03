@@ -7,13 +7,17 @@ import { ChildAndParentRouterCommunicationService } from '../../services/child-a
   styleUrls: ['./first-main-component.component.scss'],
 })
 export class FirstMainComponentComponent implements OnInit {
+  PageTitle: any;
+  PageDescription: any;
+
   constructor(
     private routerCommunicationSupport: ChildAndParentRouterCommunicationService
   ) {}
 
   ngOnInit(): void {
-    this.routerCommunicationSupport.data$.subscribe((data:any) =>
-      console.log(data.title)
-    );
+    this.routerCommunicationSupport.data$.subscribe((data: any) => {
+      this.PageTitle = data.title;
+      this.PageDescription = data.description;
+    });
   }
 }
